@@ -18,7 +18,7 @@ const Player = ({player}) => {
                     <p className="font-semibold border border-gray-200 bg-gray-100 px-3 py-2 rounded-full">{position}</p>
                 </div>
                 <hr className="text-gray-300 my-4" />
-                <p className="mb-2">{position_type}</p>
+                <p className="mb-4 text-gray-500 font-semibold">{position_type}</p>
                 <p className="font-bold">Price: ${price}</p>
                 <div class="card-actions justify-end">
                 <button class="btn btn-outline hover:bg-[#E7FE29]">Choose Player</button>

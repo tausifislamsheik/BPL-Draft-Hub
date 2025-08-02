@@ -20,7 +20,7 @@ const Players = () => {
                 <button class="btn btn-soft px-4 text-sm">Selected (<span>0</span>)</button>
             </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-20">
         {
             players.map(player => <Player player={player}></Player>)
         }
