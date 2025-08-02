@@ -1,0 +1,74 @@
+[
+    {
+    "img": "https://i.ibb.co/8nSkJFT4/Al-Hasan.jpg",
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "position": "All-Rounder",
+    "position_type": "Left-Hand-Bat",
+    "price": 970000
+  },
+  {
+    "img": "https://i.ibb.co/h18zFBmp/5f49714e60a9893611433de65a809939.jpg",
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "position": "Batsman",
+    "position_type": "Right-Hand-Bat",
+    "price": 950000
+  },
+  {
+    "img": "https://i.ibb.co/8gTK7z1v/4a6b222ae1f83eca83c534c30e4dc37e-Y29ud-GVud-HNl-YXJja-GFwa-Swx-Njgz-ODE5-MDk2-2-69701667.jpg",
+    "name": "Ben Stokes",
+    "country": "England",
+    "position": "All-Rounder",
+    "position_type": "Right-Hand-Bat",
+    "price": 1200000
+  },
+  {
+    "img": "https://i.ibb.co/d4GxZF9M/1-Zf-Axvgz-1.webp",
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "position": "Bowler",
+    "position_type": "Bowling All-rounder",
+    "price": 1000000
+  },
+  {
+    "img": "https://i.ibb.co/kgPHXVG8/0-Getty-Images-1713048001.webp",
+    "name": "Steve Smith",
+    "country": "Australia",
+    "position": "Batsman",
+    "position_type": "Right-Hand-Bat",
+    "price": 1100000
+  },
+  {
+    "img": "https://i.ibb.co/gb5j3xpn/l67220231003000456.jpg",
+    "name": "Quinton de Kock",
+    "country": "South Africa",
+    "position": "Wicket-Keeper",
+    "position_type": "Left-Hand-Bat",
+    "price": 900000
+  },
+  {
+    "img": "https://i.ibb.co/MyV5bfGx/trentboultheadshot-min.jpg",
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "position": "Bowler",
+    "position_type": "Left-arm fast-medium",
+    "price": 850000
+  },
+  {
+    "img": "https://i.ibb.co/9xhSMzF/Davidwarner.jpg",
+    "name": "David Warner",
+    "country": "Australia",
+    "position": "Batsman",
+    "position_type": "Right-Hand-Bat",
+    "price": 1050000
+  },
+  {
+    "img": "https://i.ibb.co/zWKgkHcQ/thumb-39396.jpg",
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "position": "Batsman",
+    "position_type": "Right-Hand-Bat",
+    "price": 980000
+  }
+]
