@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="navbar px-4 mt-5">
             {/* Navbar Start - Logo */}
             <div className="navbar-start">
-                <img src={logo} alt="Logo" className="w-16 h-16" />
+                <img src={logo} alt="Logo" className="w-20 h-20 cursor-pointer" />
             </div>
 
             {/* Navbar Center */}

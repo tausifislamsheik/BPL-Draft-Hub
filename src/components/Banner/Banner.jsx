@@ -10,7 +10,7 @@ const Banner = () => {
                 <img className='mx-auto w-20 lg:w-60' src={banner} alt="" />
                 <h1 className='lg:text-4xl font-bold'>Assemble Your Ultimate BPL Cricket Team</h1>
                 <p className='text-sm lg:text-xl text-gray-400'>Beyond Boundaries Beyond Limits</p>
-                <button class="btn btn-soft bg-[#E7FE29] px-2 text-sm">Claim Free Credit</button>
+                <button className="btn btn-soft bg-[#E7FE29] p-6 text-sm">Claim Free Credit</button>
             </div>
         </div>
     );
