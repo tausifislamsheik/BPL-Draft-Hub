@@ -12,10 +12,24 @@ function App() {
   
 
   const handleAddToCoin = (newCoin) =>{
-    setCoin(coin + newCoin)
-    if(coin){
-      toast.success('Free Credit Successfully added!')
+    if(coin > 0){
+      toast.error("You already claimed your free credit!");
+      return;
     }
+    setCoin(coin + newCoin)
+    toast.success("Free Credit Successfully added!");
+    
+  }
+
+  const handleChoosePlayer = (price) =>{
+      if(coin < price){
+        toast.error("Not enough coins!");
+        return;
+      }
+      setCoin(coin - price)
+      toast.success('Player Successfully added!')
+      
+    
   }
   
 
@@ -26,7 +40,7 @@ function App() {
         <Navbar coin={coin}></Navbar>
         <Toaster/>
         <Banner handleAddToCoin={handleAddToCoin}></Banner>
-        <Players></Players>
+        <Players handleChoosePlayer={handleChoosePlayer}></Players>
       </div>
         <Footer></Footer>
     </>

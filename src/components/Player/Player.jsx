@@ -1,7 +1,7 @@
 import { IoPersonSharp } from "react-icons/io5";
 import { PiFlagFill } from "react-icons/pi";
 
-const Player = ({player}) => {
+const Player = ({player, handleChoosePlayer}) => {
     const {img, name, country, position,position_type, price} = player;
     return (
         <div>
@@ -21,7 +21,7 @@ const Player = ({player}) => {
                 <p className="mb-4 text-gray-500 font-semibold">{position_type}</p>
                 <p className="font-bold">Price: ${price}</p>
                 <div className="card-actions justify-end">
-                <button className="btn btn-outline hover:bg-[#E7FE29]">Choose Player</button>
+                <button onClick={() => handleChoosePlayer(player.price)} className="btn btn-outline hover:bg-[#E7FE29]">Choose Player</button>
                 </div>
             </div>
             </div>
