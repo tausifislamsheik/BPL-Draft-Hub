@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Player from "../Player/Player";
 
-const Players = ({handleChoosePlayer}) => {
+const Players = ({handleChoosePlayer, selectedPlayer}) => {
     const [players, setPlayers] = useState([])
 
         useEffect(()=>{
@@ -17,7 +17,7 @@ const Players = ({handleChoosePlayer}) => {
             <p className="text-sm lg:text-2xl font-bold">Available Players</p>
             <div className="flex join-item">
                 <button className="bg-[#E7FE29] hover:bg-[#DCFA28] p-3 px-4 font-semibold rounded-bl-xl rounded-tl-xl cursor-pointer">Available</button>
-                <button className="p-3 px-4 font-semibold rounded-tr-xl rounded-br-xl hover:bg-gray-300 bg-gray-200 cursor-pointer">Selected (<span>0</span>)</button>
+                <button className="p-3 px-4 font-semibold rounded-tr-xl rounded-br-xl hover:bg-gray-300 bg-gray-200 cursor-pointer">Selected (<span>{selectedPlayer}</span>)</button>
             </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-20">

@@ -9,6 +9,7 @@ import toast, { Toaster } from 'react-hot-toast';
 function App() {
 
   const [coin, setCoin] = useState(0)
+  const [selectedPlayer, setSelectedPlayer] = useState(0)
   
 
   const handleAddToCoin = (newCoin) =>{
@@ -22,13 +23,14 @@ function App() {
   }
 
   const handleChoosePlayer = (price) =>{
+    
       if(coin < price){
         toast.error("Not enough coins!");
         return;
       }
+      setSelectedPlayer(count => count + 1)
       setCoin(coin - price)
       toast.success('Player Successfully added!')
-      
     
   }
   
@@ -40,7 +42,7 @@ function App() {
         <Navbar coin={coin}></Navbar>
         <Toaster/>
         <Banner handleAddToCoin={handleAddToCoin}></Banner>
-        <Players handleChoosePlayer={handleChoosePlayer}></Players>
+        <Players handleChoosePlayer={handleChoosePlayer} selectedPlayer={selectedPlayer}></Players>
       </div>
         <Footer></Footer>
     </>
