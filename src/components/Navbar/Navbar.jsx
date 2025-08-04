@@ -1,7 +1,7 @@
 import logo from '../../assets/images/logo.png'
-import coin from '../../assets/images/coin.png'
+import coinIcon from '../../assets/images/coin.png'
 
-const Navbar = () => {
+const Navbar = ({coin}) => {
     return (
         
         <div className="navbar px-4 mt-5">
@@ -15,8 +15,8 @@ const Navbar = () => {
                 {/* ✅ Mobile Coin (center) */}
                 <div className="lg:hidden">
                 <p className="flex border border-gray-200 p-2 px-6 rounded-xl font-bold items-center gap-1">
-                    <span>0</span> coin
-                    <img className="w-5 h-5" src={coin} alt="coin" />
+                    <span>{coin}</span> coin
+                    <img className="w-5 h-5" src={coinIcon} alt="coin" />
                 </p>
                 </div>
 
@@ -39,8 +39,8 @@ const Navbar = () => {
                 {/* ✅ Desktop Coin (top right) */}
                 <div className="hidden lg:flex items-center mr-4">
                 <p className="flex border border-gray-200 p-2 px-6 rounded-xl font-bold items-center gap-1">
-                    <span>0</span> coin
-                    <img className="w-5 h-5" src={coin} alt="coin" />
+                    <span>{coin}</span> coin
+                    <img className="w-5 h-5" src={coinIcon} alt="coin" />
                 </p>
                 </div>
 
