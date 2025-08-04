@@ -1,3 +1,5 @@
+import { MdDeleteForever } from "react-icons/md";
+
 const SelectedPlayersList = ({selectedPlayers}) => {
     
     return (
@@ -15,15 +17,15 @@ const SelectedPlayersList = ({selectedPlayers}) => {
               <img
                 src={player.img}
                 alt={player.name}
-                className="w-10 h-10 rounded bg-gray-300"
+                className="w-12 h-12 rounded bg-gray-300 object-cover"
               />
               <div>
-                <h3 className="font-semibold">{player.name}</h3>
+                <h3 className="font-semibold text-lg">{player.name}</h3>
                 <p className="text-xs text-gray-500">{player.position}</p>
               </div>
             </div>
-            <button className="text-red-500 hover:text-red-700">
-              <i className="fas fa-trash"></i> {/* or use an icon library */}
+            <button className="text-red-500 hover:text-red-600 text-3xl cursor-pointer">
+              <MdDeleteForever />
             </button>
           </div>
         ))}
