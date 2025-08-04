@@ -1,10 +1,11 @@
 import logo from '../../assets/images/logo.png'
 import coinIcon from '../../assets/images/coin.png'
+import { TbBulb } from "react-icons/tb";
 
-const Navbar = ({coin}) => {
+const Navbar = ({coin, toggleDarkMood}) => {
     return (
         
-        <div className="navbar px-4 mt-5">
+        <div className="navbar px-4 pt-8">
             {/* Navbar Start - Logo */}
             <div className="navbar-start">
                 <img src={logo} alt="Logo" className="w-20 h-20 cursor-pointer" />
@@ -38,6 +39,7 @@ const Navbar = ({coin}) => {
 
                 {/* ✅ Desktop Coin (top right) */}
                 <div className="hidden lg:flex items-center mr-4">
+                    <button className='text-3xl mr-5' onClick={toggleDarkMood}><TbBulb /></button>
                 <p className="flex border border-gray-200 p-2 px-6 rounded-xl font-bold items-center gap-1">
                     <span>{coin}</span> coin
                     <img className="w-5 h-5" src={coinIcon} alt="coin" />

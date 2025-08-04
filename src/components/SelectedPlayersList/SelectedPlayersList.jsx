@@ -4,12 +4,12 @@ const SelectedPlayersList = ({selectedPlayers, handleSelectedPlayerRemove, setSh
     
     return (
     <div className="mt-10">
-      <div className="flex justify-between mx-12 mb-10">
-        <h2 className="text-2xl font-bold">
+      <div className="flex justify-between mb-10">
+        <h2 className="text-sm lg:text-2xl font-bold">
         Selected Players ({selectedPlayers.length}/6)
-      </h2>
+        </h2>
           <button
-            className="bg-[#E7FE29] font-semibold px-5 py-2 rounded cursor-pointer"
+            className="bg-[#E7FE29] text-sm lg:text-lg font-semibold px-5 py-2 rounded cursor-pointer"
             onClick={() => setShowSelected(prev => !prev)}
           >
             {showSelected ? 'Back to Players' : `Selected (${selectedPlayers.length})`}

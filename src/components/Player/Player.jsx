@@ -5,7 +5,7 @@ const Player = ({player, handleChoosePlayer}) => {
     const {img, name, country, position,position_type, price} = player;
     return (
         <div>
-            <div className="card bg-base-100 shadow-sm p-6">
+            <div className="card bg-base-100 shadow-sm p-6 dark:bg-black dark:border ">
             <figure>
                 <img className="h-72 w-full object-cover rounded-2xl"
                 src={img}
@@ -15,7 +15,7 @@ const Player = ({player, handleChoosePlayer}) => {
                 <h2 className="card-title text-xl font-bold mb-2"><IoPersonSharp />{name}</h2>
                 <div className="flex justify-between">
                     <p className="text-gray-500 flex items-center gap-2"><PiFlagFill className="text-2xl" />{country}</p>
-                    <p className="font-semibold border border-gray-200 bg-gray-100 px-3 py-2 rounded-full">{position}</p>
+                    <p className="font-semibold border border-gray-200 bg-gray-100 px-3 py-2 rounded-full dark:text-black">{position}</p>
                 </div>
                 <hr className="text-gray-300 my-4" />
                 <p className="mb-4 text-gray-500 font-semibold">{position_type}</p>

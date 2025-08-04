@@ -4,7 +4,7 @@ import bgShadow from '../../assets/images/bg-shadow.png'
 const Footer = () => {
     return (
         <div>
-            <div className='translate-y-20'>
+            <div className='translate-y-20 dark:text-black'>
                  <img className='absolute rounded-2xl h-72 w-10/12 bg-white mx-32' src={bgShadow} alt="" />
                  <div className='relative text-center pt-20 space-y-4'>
                     <h1 className='text-4xl font-bold'>Subscribe to our Newsletter</h1>

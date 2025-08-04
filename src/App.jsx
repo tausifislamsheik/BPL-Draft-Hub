@@ -46,10 +46,15 @@ function App() {
     setSelectedPlayers(newSelectedPlayers)
   }
 
+  const toggleDarkMood = () => {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
   return (
     <>
       <div className='mx-5 lg:mx-20'>
-        <Navbar coin={coin} />
+        <Navbar coin={coin} toggleDarkMood={toggleDarkMood}/>
         <Toaster />
         <Banner handleAddToCoin={handleAddToCoin} />
         {!showSelected ? (

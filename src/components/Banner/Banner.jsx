@@ -5,7 +5,7 @@ import banner from '../../assets/images/banner-main.png'
 
 const Banner = ({handleAddToCoin}) => {
     return (
-        <div className='mt-10'>
+        <div className='mt-10 mb-10'>
             <img className='bg-black rounded-3xl absolute' src={bgShadow} alt="" />
             <div className='relative text-white text-center px-auto space-y-2 md:space-y-5 lg:space-y-8 lg:py-20 p-2'>
                 <img className='mx-auto w-20 lg:w-60' src={banner} alt="" />
