@@ -7,8 +7,8 @@ const Footer = () => {
             <div className='translate-y-20'>
                  <img className='absolute rounded-2xl h-72 w-10/12 bg-white mx-32' src={bgShadow} alt="" />
                  <div className='relative text-center pt-20 space-y-4'>
-                    <h1 className='text-3xl font-bold'>Subscribe to our Newsletter</h1>
-                    <p className='text-gray-500'>Get the latest updates and news right in your inbox!</p>
+                    <h1 className='text-4xl font-bold'>Subscribe to our Newsletter</h1>
+                    <p className='text-gray-500 text-lg'>Get the latest updates and news right in your inbox!</p>
                     <input type="text" className='border border-gray-300 py-3 p-4 rounded-bl-xl rounded-tl-xl w-2/5 join-item' placeholder='Enter your email' />
                     <button className="btn join-item py-6 bg-gradient-to-r from-[#e396d6] via-[#f5b968] to-[#f7e664]">Subscribe</button>
                  </div>

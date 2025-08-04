@@ -52,20 +52,10 @@ function App() {
         <Navbar coin={coin} />
         <Toaster />
         <Banner handleAddToCoin={handleAddToCoin} />
-
-        <div className="flex justify-end">
-          <button
-            className="bg-[#E7FE29] font-semibold px-5 py-2 rounded cursor-pointer"
-            onClick={() => setShowSelected(prev => !prev)}
-          >
-            {showSelected ? 'Back to Players' : `Selected (${selectedPlayers.length})`}
-          </button>
-        </div>
-
         {!showSelected ? (
-          <Players handleChoosePlayer={handleChoosePlayer} />
+          <Players handleChoosePlayer={handleChoosePlayer} showSelected={showSelected} setShowSelected={setShowSelected} selectedPlayers={selectedPlayers} />
         ) : (
-          <SelectedPlayersList selectedPlayers={selectedPlayers} handleSelectedPlayerRemove={handleSelectedPlayerRemove} />
+          <SelectedPlayersList selectedPlayers={selectedPlayers} showSelected={showSelected} setShowSelected={setShowSelected} handleSelectedPlayerRemove={handleSelectedPlayerRemove} />
         )}
       </div>
       <Footer />

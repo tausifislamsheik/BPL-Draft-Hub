@@ -1,13 +1,22 @@
 import { MdDeleteForever } from "react-icons/md";
 
-const SelectedPlayersList = ({selectedPlayers, handleSelectedPlayerRemove}) => {
+const SelectedPlayersList = ({selectedPlayers, handleSelectedPlayerRemove, setShowSelected, showSelected}) => {
     
     return (
-        <div className="mt-10">
-      <h2 className="text-2xl font-bold">
+    <div className="mt-10">
+      <div className="flex justify-between mx-12 mb-10">
+        <h2 className="text-2xl font-bold">
         Selected Players ({selectedPlayers.length}/6)
       </h2>
-      <div className="mt-4 space-y-4">
+          <button
+            className="bg-[#E7FE29] font-semibold px-5 py-2 rounded cursor-pointer"
+            onClick={() => setShowSelected(prev => !prev)}
+          >
+            {showSelected ? 'Back to Players' : `Selected (${selectedPlayers.length})`}
+          </button>
+        </div>
+      
+      <div className="mt-4 mb-20 h-screen space-y-4">
         {selectedPlayers.map((player) => (
           <div
             key={player.id}
