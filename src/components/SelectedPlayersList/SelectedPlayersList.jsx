@@ -1,6 +1,6 @@
 import { MdDeleteForever } from "react-icons/md";
 
-const SelectedPlayersList = ({selectedPlayers}) => {
+const SelectedPlayersList = ({selectedPlayers, handleSelectedPlayerRemove}) => {
     
     return (
         <div className="mt-10">
@@ -24,7 +24,7 @@ const SelectedPlayersList = ({selectedPlayers}) => {
                 <p className="text-xs text-gray-500">{player.position}</p>
               </div>
             </div>
-            <button className="text-red-500 hover:text-red-600 text-3xl cursor-pointer">
+            <button onClick={() => handleSelectedPlayerRemove(player.id)} className="text-red-500 hover:text-red-600 text-3xl cursor-pointer">
               <MdDeleteForever />
             </button>
           </div>

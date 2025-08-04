@@ -41,6 +41,11 @@ function App() {
     toast.success('Player Successfully added!')
   }
 
+  const handleSelectedPlayerRemove = (id) =>{
+    const newSelectedPlayers = selectedPlayers.filter(players => players.id !== id)
+    setSelectedPlayers(newSelectedPlayers)
+  }
+
   return (
     <>
       <div className='mx-5 lg:mx-20'>
@@ -50,7 +55,7 @@ function App() {
 
         <div className="flex justify-end">
           <button
-            className="bg-[#E7FE29] font-semibold px-5 py-2 rounded "
+            className="bg-[#E7FE29] font-semibold px-5 py-2 rounded cursor-pointer"
             onClick={() => setShowSelected(prev => !prev)}
           >
             {showSelected ? 'Back to Players' : `Selected (${selectedPlayers.length})`}
@@ -60,7 +65,7 @@ function App() {
         {!showSelected ? (
           <Players handleChoosePlayer={handleChoosePlayer} />
         ) : (
-          <SelectedPlayersList selectedPlayers={selectedPlayers} />
+          <SelectedPlayersList selectedPlayers={selectedPlayers} handleSelectedPlayerRemove={handleSelectedPlayerRemove} />
         )}
       </div>
       <Footer />
