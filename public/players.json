@@ -1,5 +1,6 @@
 [
     {
+    "id": 1,
     "img": "https://i.ibb.co/8nSkJFT4/Al-Hasan.jpg",
     "name": "Shakib Al Hasan",
     "country": "Bangladesh",
@@ -8,6 +9,7 @@
     "price": 970000
   },
   {
+    "id": 2,
     "img": "https://i.ibb.co/h18zFBmp/5f49714e60a9893611433de65a809939.jpg",
     "name": "Kane Williamson",
     "country": "New Zealand",
@@ -16,6 +18,7 @@
     "price": 950000
   },
   {
+    "id": 3,
     "img": "https://i.ibb.co/8gTK7z1v/4a6b222ae1f83eca83c534c30e4dc37e-Y29ud-GVud-HNl-YXJja-GFwa-Swx-Njgz-ODE5-MDk2-2-69701667.jpg",
     "name": "Ben Stokes",
     "country": "England",
@@ -24,6 +27,7 @@
     "price": 1200000
   },
   {
+    "id": 4,
     "img": "https://i.ibb.co/d4GxZF9M/1-Zf-Axvgz-1.webp",
     "name": "Rashid Khan",
     "country": "Afghanistan",
@@ -32,6 +36,7 @@
     "price": 1000000
   },
   {
+    "id": 5,
     "img": "https://i.ibb.co/kgPHXVG8/0-Getty-Images-1713048001.webp",
     "name": "Steve Smith",
     "country": "Australia",
@@ -40,6 +45,7 @@
     "price": 1100000
   },
   {
+    "id": 6,
     "img": "https://i.ibb.co/gb5j3xpn/l67220231003000456.jpg",
     "name": "Quinton de Kock",
     "country": "South Africa",
@@ -48,6 +54,7 @@
     "price": 900000
   },
   {
+    "id": 7,
     "img": "https://i.ibb.co/MyV5bfGx/trentboultheadshot-min.jpg",
     "name": "Trent Boult",
     "country": "New Zealand",
@@ -56,6 +63,7 @@
     "price": 850000
   },
   {
+    "id": 8,
     "img": "https://i.ibb.co/9xhSMzF/Davidwarner.jpg",
     "name": "David Warner",
     "country": "Australia",
@@ -64,6 +72,7 @@
     "price": 1050000
   },
   {
+    "id": 9,
     "img": "https://i.ibb.co/zWKgkHcQ/thumb-39396.jpg",
     "name": "Babar Azam",
     "country": "Pakistan",

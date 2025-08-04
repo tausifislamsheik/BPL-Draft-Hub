@@ -21,7 +21,7 @@ const Player = ({player, handleChoosePlayer}) => {
                 <p className="mb-4 text-gray-500 font-semibold">{position_type}</p>
                 <p className="font-bold">Price: ${price}</p>
                 <div className="card-actions justify-end">
-                <button onClick={() => handleChoosePlayer(player.price)} className="btn btn-outline hover:bg-[#E7FE29]">Choose Player</button>
+                <button onClick={() => handleChoosePlayer(player.price,player)} className="btn btn-outline hover:bg-[#E7FE29]">Choose Player</button>
                 </div>
             </div>
             </div>
