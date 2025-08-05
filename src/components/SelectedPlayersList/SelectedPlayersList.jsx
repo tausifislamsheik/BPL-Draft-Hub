@@ -9,7 +9,7 @@ const SelectedPlayersList = ({selectedPlayers, handleSelectedPlayerRemove, setSh
         Selected Players ({selectedPlayers.length}/6)
         </h2>
           <button
-            className="bg-[#E7FE29] text-sm lg:text-lg font-semibold px-5 py-2 rounded cursor-pointer"
+            className="bg-[#E7FE29] dark:text-black text-sm lg:text-lg font-semibold px-5 py-2 rounded cursor-pointer"
             onClick={() => setShowSelected(prev => !prev)}
           >
             {showSelected ? 'Back to Players' : `Selected (${selectedPlayers.length})`}

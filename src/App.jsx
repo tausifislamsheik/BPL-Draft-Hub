@@ -10,7 +10,8 @@ import SelectedPlayersList from './components/SelectedPlayersList/SelectedPlayer
 function App() {
   const [coin, setCoin] = useState(0)
   const [selectedPlayers, setSelectedPlayers] = useState([])
-  const [showSelected, setShowSelected] = useState(false) // 👈 toggle view
+  const [showSelected, setShowSelected] = useState(false) 
+  const [isDark, setDark] = useState(false)
 
   const handleAddToCoin = (newCoin) => {
     if (coin > 0) {
@@ -47,25 +48,26 @@ function App() {
     toast.error("Selected Player Removed")
   }
 
-  const toggleDarkMood = () => {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
+  const toggleTheme = () => {
+   setDark(!isDark);
 }
 
   return (
-    <>
-      <div className='mx-5 lg:mx-20'>
-        <Navbar coin={coin} toggleDarkMood={toggleDarkMood}/>
-        <Toaster />
-        <Banner handleAddToCoin={handleAddToCoin} />
-        {!showSelected ? (
-          <Players handleChoosePlayer={handleChoosePlayer} showSelected={showSelected} setShowSelected={setShowSelected} selectedPlayers={selectedPlayers} />
-        ) : (
-          <SelectedPlayersList selectedPlayers={selectedPlayers} showSelected={showSelected} setShowSelected={setShowSelected} handleSelectedPlayerRemove={handleSelectedPlayerRemove} />
-        )}
-      </div>
-      <Footer />
-    </>
+    <div className={isDark ? 'dark' : ''}>
+        <div className='bg-primary-color dark:bg-primary-dark-color dark:text-white'>
+          <div className='mx-5 lg:mx-20 '>
+            <Navbar coin={coin} toggleTheme={toggleTheme}/>
+            <Toaster />
+            <Banner handleAddToCoin={handleAddToCoin} />
+            {!showSelected ? (
+              <Players handleChoosePlayer={handleChoosePlayer} showSelected={showSelected} setShowSelected={setShowSelected} selectedPlayers={selectedPlayers} />
+            ) : (
+              <SelectedPlayersList selectedPlayers={selectedPlayers} showSelected={showSelected} setShowSelected={setShowSelected} handleSelectedPlayerRemove={handleSelectedPlayerRemove} />
+            )}
+          </div>
+          <Footer />
+        </div>
+    </div>
   )
 }
 

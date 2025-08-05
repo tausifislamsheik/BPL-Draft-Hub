@@ -6,3 +6,10 @@
 body{
     font-family: "Sora", sans-serif;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+    --color-primary-color:#FFFFFF;
+    --color-primary-dark-color:#000000;
+}
