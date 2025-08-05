@@ -5,7 +5,7 @@ const Player = ({player, handleChoosePlayer}) => {
     const {img, name, country, position,position_type, price} = player;
     return (
         <div>
-            <div className="card bg-base-100 shadow-sm p-6">
+            <div className="card bg-base-100 shadow-xl p-6">
             <figure>
                 <img className="h-72 w-full object-cover rounded-2xl"
                 src={img}

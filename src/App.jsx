@@ -44,6 +44,7 @@ function App() {
   const handleSelectedPlayerRemove = (id) =>{
     const newSelectedPlayers = selectedPlayers.filter(players => players.id !== id)
     setSelectedPlayers(newSelectedPlayers)
+    toast.error("Selected Player Removed")
   }
 
   const toggleDarkMood = () => {
