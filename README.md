@@ -1,12 +1,30 @@
-# React + Vite
+# 🏏 BPL Draft Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application that simulates the player selection process for the **Bangladesh Premier League (BPL)** draft. Users can select players, manage a virtual team, and experience an interactive draft-style interface built with React and Tailwind CSS.
 
-Currently, two official plugins are available:
+🔗 **Live Site**: [bpl-draft-hub.vercel.app](https://bpl-draft-hub.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🎮 **Player Selection** – Add up to 6 players to your team with visual feedback.
+- 🧹 **Remove Players** – Delete any selected player dynamically.
+- 🔍 **Responsive UI** – Seamless design across mobile, tablet, and desktop devices.
+- ⚡ **Interactive Animations** – Smooth hover effects and transition styling.
+- 📦 **React + Tailwind** – Built with modern frontend tools for speed and style.
+
+---
+
+## 🛠️ Tech Stack
+
+- **React JS** – UI rendering and component architecture
+- **Tailwind CSS** – Utility-first responsive design
+- **Daisy UI** – Pre-built Tailwind components for speed and consistency
+- **Vite** – Fast development server and build tool
+
+---
+
+## 📷 Screenshots
+
+![Full project overview](BPL-Draft-Hub-08-05-2025_09_36_PM.png)
