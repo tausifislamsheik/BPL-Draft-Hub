@@ -52,11 +52,15 @@ function App() {
    setDark(!isDark);
 }
 
+const refreshPage = () => { 
+  window.location.reload(); 
+}
+
   return (
     <div className={isDark ? 'dark' : ''}>
         <div className='bg-primary-color dark:bg-primary-dark-color dark:text-white'>
           <div className='mx-5 lg:mx-20 '>
-            <Navbar coin={coin} toggleTheme={toggleTheme}/>
+            <Navbar refreshPage={refreshPage} coin={coin} toggleTheme={toggleTheme}/>
             <Toaster />
             <Banner handleAddToCoin={handleAddToCoin} />
             {!showSelected ? (

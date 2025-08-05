@@ -1,13 +1,13 @@
 import logo from '../../assets/images/logo.png'
 import coinIcon from '../../assets/images/coin.png'
 
-const Navbar = ({coin, toggleTheme}) => {
+const Navbar = ({coin, toggleTheme, refreshPage}) => {
     return (
         
         <div className="navbar px-4 pt-8">
             {/* Navbar Start - Logo */}
             <div className="navbar-start">
-                <img src={logo} alt="Logo" className="w-20 h-20 cursor-pointer" />
+                <img onClick={ refreshPage } src={logo} alt="Logo" className="w-20 h-20 cursor-pointer" />
             </div>
 
             {/* Navbar Center */}
